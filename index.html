@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Equalize helps shared households split spending fairly, manage chores, track shopping and understand their finances — all in one place. One subscription covers everyone.">
+  <meta name="theme-color" content="#52B788">
+  <title>Equalize — Your household, in balance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+
+      <a href="#" class="nav-logo">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <rect width="28" height="28" rx="7" fill="#52B788"/>
+          <rect x="7" y="10" width="14" height="2.5" rx="1.25" fill="white"/>
+          <rect x="7" y="15.5" width="14" height="2.5" rx="1.25" fill="white"/>
+        </svg>
+        <span class="logo-text">Equalize</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#pricing" class="btn btn-primary">Start free trial</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <a href="#features" class="mobile-link">Features</a>
+      <a href="#how-it-works" class="mobile-link">How it works</a>
+      <a href="#pricing" class="mobile-link">Pricing</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
+      <div class="mobile-divider"></div>
+      <a href="#" class="mobile-link">Sign in</a>
+      <a href="#pricing" class="btn btn-primary btn-full">Start free trial</a>
+    </div>
+  </div>
+
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+
+        <div class="hero-text animate-on-scroll">
+          <div class="eyebrow">Household management, simplified</div>
+          <h1 class="hero-headline">Your household,<br>in balance.</h1>
+          <p class="hero-sub">Equalize helps shared households split spending fairly, manage chores, track shopping and understand their finances — all in one place. One subscription covers everyone.</p>
+          <div class="hero-actions">
+            <a href="#pricing" class="btn btn-primary btn-large">Start your free 7-day trial</a>
+            <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
+          </div>
+          <p class="hero-note">No payment required until day 8.</p>
+          <div class="audience-tags">
+            <span class="audience-tag">Couples</span>
+            <span class="audience-tag">Families</span>
+            <span class="audience-tag">Housemates</span>
+            <span class="audience-tag">Shared homes</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phones-group">
+
+            <!-- Primary phone: Dashboard -->
+            <div class="phone phone--primary">
+              <div class="phone-body">
+                <div class="phone-camera"></div>
+                <div class="phone-screen">
+                  <img src="images/dashboard.jpeg" alt="Equalize dashboard showing household balance and spending overview" class="phone-screenshot">
+                </div>
+                <div class="phone-home-bar"></div>
+              </div>
+            </div>
+
+            <!-- Secondary phone: Money / Expenses -->
+            <div class="phone phone--secondary">
+              <div class="phone-body">
+                <div class="phone-camera"></div>
+                <div class="phone-screen">
+                  <img src="images/money.jpeg" alt="Equalize expense splitting and tracking screen" class="phone-screenshot">
+                </div>
+                <div class="phone-home-bar"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PROBLEM
+    ============================================================ -->
+    <section class="problem" id="problem">
+      <div class="container">
+        <div class="problem-text animate-on-scroll">
+          <h2>Shared homes are complicated.<br>They don't have to be.</h2>
+          <p>Whether you're splitting rent with a partner, managing a family budget or keeping things fair with housemates — shared finances and responsibilities get messy without a system.</p>
+        </div>
+        <div class="pain-cards">
+          <div class="pain-card animate-on-scroll">
+            <h3>Who paid for that?</h3>
+            <p>Keep track of shared spending without spreadsheets or guesswork.</p>
+          </div>
+          <div class="pain-card animate-on-scroll">
+            <h3>Are chores being shared fairly?</h3>
+            <p>Make household effort visible and easier to balance.</p>
+          </div>
+          <div class="pain-card animate-on-scroll">
+            <h3>How much did we spend this month?</h3>
+            <p>See household spending and activity in one place.</p>
+          </div>
+        </div>
+        <div class="problem-resolution animate-on-scroll">
+          <p>Equalize gives your shared home one place to track it all — clearly, fairly, together.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         HOW IT WORKS
+    ============================================================ -->
+    <section class="hiw" id="how-it-works">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Up and running in minutes.</h2>
+          <p>No complicated setup. No bank linking required. Just create your household and invite your people.</p>
+        </div>
+        <div class="steps">
+          <div class="step animate-on-scroll">
+            <div class="step-number">1</div>
+            <h3>Create your household</h3>
+            <p>Download Equalize, set up your household and give it a name. Takes about 60 seconds.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step animate-on-scroll">
+            <div class="step-number">2</div>
+            <h3>Invite your people</h3>
+            <p>Share a simple invite link. Everyone joins with one tap. One subscription covers the whole household.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step animate-on-scroll">
+            <div class="step-number">3</div>
+            <h3>Live more fairly</h3>
+            <p>Log expenses, assign chores, check your balance. Equalize runs quietly in the background keeping things fair.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PRICING
+    ============================================================ -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>One price. Your whole household.</h2>
+          <p>Every plan includes all features and a 7-day free trial. No charge until day 8.</p>
+        </div>
+
+        <div class="pricing-cards">
+
+          <div class="pricing-card animate-on-scroll">
+            <div class="pc-name">Monthly</div>
+            <div class="pc-price-row">
+              <span class="pc-amount">£3.99</span>
+              <span class="pc-period">/ month</span>
+            </div>
+            <div class="pc-billing">Billed monthly. Cancel anytime.</div>
+            <ul class="pc-features" role="list">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#D8F3DC"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="#52B788" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Unlimited household members
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#D8F3DC"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="#52B788" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Expense splitting &amp; balance tracking
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#D8F3DC"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="#52B788" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Chore tracking &amp; shopping lists
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#D8F3DC"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="#52B788" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Monthly insights &amp; reports
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#D8F3DC"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="#52B788" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                7-day free trial
+              </li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-full">Start free trial</a>
+          </div>
+
+          <div class="pricing-card pricing-card--featured animate-on-scroll">
+            <div class="pc-badge">Best value &middot; Save 27%</div>
+            <div class="pc-name">Annual</div>
+            <div class="pc-price-row">
+              <span class="pc-amount">£34.99</span>
+              <span class="pc-period">/ year</span>
+            </div>
+            <div class="pc-equiv">~£2.92 per month</div>
+            <div class="pc-billing">Billed annually.</div>
+            <ul class="pc-features pc-features--light" role="list">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="rgba(255,255,255,0.2)"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Everything in Monthly
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="rgba(255,255,255,0.2)"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Unlimited household members
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="rgba(255,255,255,0.2)"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Best value for your household
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="rgba(255,255,255,0.2)"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                Priority support
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="rgba(255,255,255,0.2)"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                7-day free trial
+              </li>
+            </ul>
+            <a href="#" class="btn btn-white btn-full">Start free trial</a>
+          </div>
+
+        </div>
+
+        <div class="pricing-preview animate-on-scroll">
+          <div class="pp-frame">
+            <div class="pp-notch"></div>
+            <img src="images/pricing.jpeg" alt="In-app subscription plan selection screen" class="pp-img">
+            <div class="pp-home"></div>
+          </div>
+          <p class="pp-caption">Manage your plan directly from the app</p>
+        </div>
+
+        <div class="pricing-trust animate-on-scroll">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="#52B788" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="#52B788" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Reminder before billing
+          </div>
+          <div class="trust-sep" aria-hidden="true">·</div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#52B788" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Cancel anytime
+          </div>
+          <div class="trust-sep" aria-hidden="true">·</div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#52B788" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="#52B788" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="#52B788" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            One subscription, whole household
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         FEATURES
+    ============================================================ -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Everything your household needs.<br>Nothing it doesn't.</h2>
+          <p>One app that covers money, chores, shopping and the bigger picture of how you share life together.</p>
+        </div>
+
+        <!-- Feature 1: Spending -->
+        <div class="feature-block animate-on-scroll">
+          <div class="feature-text">
+            <div class="feature-tag">Spending</div>
+            <h3>Fair splits, every time.</h3>
+            <p>Log any expense and split it exactly how your household works — equally, by percentage, or by custom amount. No more mental maths. No more IOUs on the fridge.</p>
+          </div>
+          <div class="feature-ui">
+            <div class="fp-frame">
+              <div class="fp-notch"></div>
+              <img src="images/money.jpeg" alt="Expense splitting screen showing a household shop split between members" class="fp-img">
+              <div class="fp-home"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2: Balance -->
+        <div class="feature-block feature-block--reverse animate-on-scroll">
+          <div class="feature-text">
+            <div class="feature-tag">Balance</div>
+            <h3>Always know where you stand.</h3>
+            <p>Equalize keeps a running balance so you always know who's contributed what. Settle up when it suits you — not after a difficult conversation.</p>
+          </div>
+          <div class="feature-ui">
+            <div class="fp-frame">
+              <div class="fp-notch"></div>
+              <img src="images/dashboard.jpeg" alt="Household balance overview showing each member's contributions" class="fp-img">
+              <div class="fp-home"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3: Chores -->
+        <div class="feature-block animate-on-scroll">
+          <div class="feature-text">
+            <div class="feature-tag">Chores</div>
+            <h3>Share the effort, not just the bills.</h3>
+            <p>Assign chores, track completion and make sure the household workload is genuinely shared. Because fairness isn't only about money.</p>
+          </div>
+          <div class="feature-ui">
+            <div class="fp-frame">
+              <div class="fp-notch"></div>
+              <img src="images/chores.jpeg" alt="Chore tracker showing assigned tasks and completion status" class="fp-img">
+              <div class="fp-home"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4: Shopping -->
+        <div class="feature-block feature-block--reverse animate-on-scroll">
+          <div class="feature-text">
+            <div class="feature-tag">Shopping</div>
+            <h3>One list, everyone's in the loop.</h3>
+            <p>Add items, see who's buying what, and share with your whole household in real time. No more "I thought you were getting it."</p>
+          </div>
+          <div class="feature-ui">
+            <div class="fp-frame">
+              <div class="fp-notch"></div>
+              <img src="images/shopping.jpeg" alt="Shared shopping list with items ticked off" class="fp-img">
+              <div class="fp-home"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 5: Insights -->
+        <div class="feature-block animate-on-scroll">
+          <div class="feature-text">
+            <div class="feature-tag">Insights</div>
+            <h3>Understand your household, month by month.</h3>
+            <p>See where your money goes, how your balance is trending and how responsibilities are being shared — with clear summaries every month.</p>
+          </div>
+          <div class="feature-ui">
+            <div class="fp-frame">
+              <div class="fp-notch"></div>
+              <img src="images/monthly-report.jpeg" alt="Monthly household spending insights and category breakdown" class="fp-img">
+              <div class="fp-home"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SCREENSHOTS
+    ============================================================ -->
+    <section class="screenshots" id="screenshots">
+      <div class="container">
+        <div class="section-header section-header--light animate-on-scroll">
+          <h2>See it for yourself.</h2>
+          <p>A glimpse at what life looks like with Equalize in your shared home.</p>
+        </div>
+
+        <div class="ss-gallery">
+
+          <div class="ss-item animate-on-scroll">
+            <div class="ss-phone-frame">
+              <div class="ss-notch"></div>
+              <img src="images/money.jpeg" alt="Expense splitting and balance tracking screen" class="ss-img">
+              <div class="ss-home-bar"></div>
+            </div>
+            <p class="ss-caption">Expense tracking</p>
+          </div>
+
+          <div class="ss-item animate-on-scroll">
+            <div class="ss-phone-frame">
+              <div class="ss-notch"></div>
+              <img src="images/chores.jpeg" alt="Chore tracker showing household tasks and assignments" class="ss-img">
+              <div class="ss-home-bar"></div>
+            </div>
+            <p class="ss-caption">Chore tracking</p>
+          </div>
+
+          <div class="ss-item ss-item--raised animate-on-scroll">
+            <div class="ss-phone-frame ss-phone-frame--lg">
+              <div class="ss-notch"></div>
+              <img src="images/dashboard.jpeg" alt="Equalize home dashboard with household balance overview" class="ss-img">
+              <div class="ss-home-bar"></div>
+            </div>
+            <p class="ss-caption">Home screen</p>
+          </div>
+
+          <div class="ss-item animate-on-scroll">
+            <div class="ss-phone-frame">
+              <div class="ss-notch"></div>
+              <img src="images/shopping.jpeg" alt="Shared shopping list with items ticked off" class="ss-img">
+              <div class="ss-home-bar"></div>
+            </div>
+            <p class="ss-caption">Shopping list</p>
+          </div>
+
+          <div class="ss-item animate-on-scroll">
+            <div class="ss-phone-frame">
+              <div class="ss-notch"></div>
+              <img src="images/monthly-report.jpeg" alt="Monthly spending insights and household reports" class="ss-img">
+              <div class="ss-home-bar"></div>
+            </div>
+            <p class="ss-caption">Monthly reports</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         FAQ
+    ============================================================ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Questions answered.</h2>
+          <p>Everything you need to know before getting started.</p>
+        </div>
+
+        <div class="faq-list" id="faq-list">
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-q" aria-expanded="false">
+              Does one subscription really cover my whole household?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>Yes. One Equalize subscription covers every member of your household — your partner, family members, or housemates. Everyone gets full access. There are no per-person fees.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-q" aria-expanded="false">
+              What happens during the free trial?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>You get full access to every feature for 7 days. We won't charge you until day 8, and we'll send you a reminder before your trial ends. You can cancel anytime before then with no charge.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-q" aria-expanded="false">
+              Does everyone in my household need to download the app?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>Yes — each person in your household downloads Equalize and joins using a simple invite link. Everything is then shared across all members in real time.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-q" aria-expanded="false">
+              Does Equalize connect to our bank account?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>No bank connection is required. You log expenses manually, which keeps things simple and private. You can record whether something was paid from a joint account or a personal account.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-q" aria-expanded="false">
+              Can we switch between monthly and annual plans?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>Yes. You can switch plans at any time from within the app. If you upgrade to annual mid-month, we'll credit any remaining days.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-q" aria-expanded="false">
+              What if someone moves out?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>You can remove household members at any time. Your data and history stays intact for whoever remains. We've made exits as painless as entrances.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-q" aria-expanded="false">
+              Is my financial data secure?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>Equalize uses industry-standard encryption for all data in transit and at rest. We never sell your data. Your household's information is yours.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-q" aria-expanded="false">
+              What platforms is Equalize available on?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>Equalize is available on iOS and Android. A web version is on the roadmap.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         FINAL CTA
+    ============================================================ -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-cta-inner animate-on-scroll">
+          <h2>Your fairer household starts today.</h2>
+          <p>Join shared households using Equalize to split money, manage chores and live more fairly — together.</p>
+          <div class="cta-phone">
+            <div class="cta-frame">
+              <div class="cta-notch"></div>
+              <img src="images/trial.jpeg" alt="Equalize 7-day free trial welcome screen" class="cta-img">
+              <div class="cta-home"></div>
+            </div>
+          </div>
+          <a href="#pricing" class="btn btn-white btn-large">Start your free 7-day trial</a>
+          <p class="cta-note">No payment until day 8. Cancel anytime.</p>
+          <div class="store-badges">
+            <a href="#" class="store-badge" aria-label="Download on the App Store">
+              <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" fill="currentColor"/></svg>
+              <div class="store-badge-text">
+                <span class="store-sub">Download on the</span>
+                <span class="store-main">App Store</span>
+              </div>
+            </a>
+            <a href="#" class="store-badge" aria-label="Get it on Google Play">
+              <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.18 23.76c.35.19.75.24 1.15.14L14.54 12 10.9 8.36 3.18 23.76zM20.7 10.37l-2.7-1.54-3.9 3.9 3.9 3.9 2.72-1.56c.77-.44.77-1.26 0-1.7zM1.55.38C1.22.7 1 1.22 1 1.9v20.2c0 .68.22 1.2.55 1.52l.08.07L12.17 12v-.27L1.63.3zM14.54 12L4.33.1c-.4-.12-.8-.07-1.15.14L14.54 12z" fill="currentColor"/></svg>
+              <div class="store-badge-text">
+                <span class="store-sub">Get it on</span>
+                <span class="store-main">Google Play</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo">
+            <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <rect width="28" height="28" rx="7" fill="#52B788"/>
+              <rect x="7" y="10" width="14" height="2.5" rx="1.25" fill="white"/>
+              <rect x="7" y="15.5" width="14" height="2.5" rx="1.25" fill="white"/>
+            </svg>
+            <span class="logo-text">Equalize</span>
+          </a>
+          <p class="footer-tagline">Your household, in balance.</p>
+          <p class="footer-desc">A household management app for couples, families, housemates and shared homes.</p>
+          <a href="mailto:hello@equalizeapp.com" class="footer-email">hello@equalizeapp.com</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul role="list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="mailto:hello@equalizeapp.com">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul role="list">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Equalize. All rights reserved.</p>
+        <p>Made for fairer shared homes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
