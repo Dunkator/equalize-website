@@ -178,6 +178,12 @@ p  { color: var(--text-muted); line-height: 1.7; }
 
 .btn-full { width: 100%; }
 
+.btn-disabled {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
 
 /* ============================================================
    NAVIGATION
@@ -1156,6 +1162,16 @@ p  { color: var(--text-muted); line-height: 1.7; }
   transform: translateY(-2px);
 }
 
+.store-badge--soon {
+  opacity: 0.55;
+  cursor: default;
+}
+.store-badge--soon:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.25);
+  transform: none;
+}
+
 .store-icon { width: 24px; height: 24px; flex-shrink: 0; }
 
 .store-badge-text {
@@ -1205,7 +1221,7 @@ p  { color: var(--text-muted); line-height: 1.7; }
 
 .footer-desc {
   font-size: 0.875rem;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.6);
   line-height: 1.65;
 }
 
@@ -1240,7 +1256,7 @@ p  { color: var(--text-muted); line-height: 1.7; }
 
 .footer-bottom p {
   font-size: 0.8125rem;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.55);
 }
 
 
@@ -1388,7 +1404,7 @@ p  { color: var(--text-muted); line-height: 1.7; }
 ============================================================ */
 
 .legal-header {
-  padding: 80px 0 48px;
+  padding: calc(var(--nav-height) + 32px) 0 48px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -1416,6 +1432,15 @@ p  { color: var(--text-muted); line-height: 1.7; }
   letter-spacing: -0.01em;
 }
 
+.legal-content h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 24px;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
 .legal-content p,
 .legal-content li {
   font-size: 0.975rem;
@@ -1430,6 +1455,12 @@ p  { color: var(--text-muted); line-height: 1.7; }
   margin-bottom: 12px;
 }
 
+.legal-content ol {
+  list-style: decimal;
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
 .legal-content a {
   color: var(--green-dark);
   text-decoration: underline;
@@ -1440,6 +1471,6 @@ p  { color: var(--text-muted); line-height: 1.7; }
   display: inline-block;
   margin-top: 8px;
   font-size: 0.875rem;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.6);
 }
-.footer-email:hover { color: var(--green-dark); }
+.footer-email:hover { color: white; }
