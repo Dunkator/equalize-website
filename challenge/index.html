@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equalize — Fairness Challenge</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0F1A2E;
+      color: #E8ECF1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .card {
+      text-align: center;
+      max-width: 380px;
+    }
+    h1 { font-size: 22px; margin-bottom: 8px; }
+    p { font-size: 15px; color: #A0AABB; margin-bottom: 28px; }
+    .badges { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .badges a img { height: 44px; }
+  </style>
+  <script>
+    (function () {
+      // Extract referral code from URL path: /challenge/{code}
+      var parts = window.location.pathname.split('/');
+      var code = parts.length >= 3 ? parts[2] : '';
+      var ua = navigator.userAgent || '';
+
+      var isAndroid = /android/i.test(ua);
+      var isIOS = /iphone|ipad|ipod/i.test(ua);
+
+      // PLACEHOLDER: Replace with actual store IDs before deployment.
+      var playStoreUrl = 'https://play.google.com/store/apps/details?id=com.equalizehousehold.app';
+      var appStoreUrl = 'https://apps.apple.com/app/idPLACEHOLDER_APP_STORE_ID';
+
+      if (isAndroid) {
+        // Structured referrer payload for Play Install Referrer (read in a future batch).
+        var url = playStoreUrl;
+        if (code) {
+          var payload = 'referralCode=' + encodeURIComponent(code)
+            + '&sourceType=household_referral&campaign=day7_challenge';
+          url += '&referrer=' + encodeURIComponent(payload);
+        }
+        window.location.replace(url);
+      } else if (isIOS) {
+        window.location.replace(appStoreUrl);
+      }
+      // Desktop / unknown: fall through to the HTML fallback below.
+    })();
+  </script>
+</head>
+<body>
+  <!-- Visible only on desktop / unsupported browsers. Mobile redirects above. -->
+  <div class="card">
+    <h1>Equalize</h1>
+    <p>See how your household shares costs and effort. Download the app to get started.</p>
+    <div class="badges">
+      <a href="https://play.google.com/store/apps/details?id=com.equalizehousehold.app">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+             alt="Get it on Google Play">
+      </a>
+      <a href="https://apps.apple.com/app/idPLACEHOLDER_APP_STORE_ID">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+             alt="Download on the App Store">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
