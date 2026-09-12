@@ -3,6 +3,10 @@
     {
       "source": "/challenge/:code",
       "destination": "/challenge/index.html"
+    },
+    {
+      "source": "/join/:code",
+      "destination": "/join/index.html"
     }
   ],
   "headers": [
