@@ -57,7 +57,7 @@
 
       <div class="legal-header">
         <h1>Privacy Policy</h1>
-        <p>Last updated: 29 June 2026</p>
+        <p>Last updated: 5 November 2026</p>
       </div>
 
       <div class="legal-content">
@@ -122,7 +122,8 @@
           <li>target household size;</li>
           <li>joint contribution settings;</li>
           <li>household activity history;</li>
-          <li>household creation date.</li>
+          <li>household creation date;</li>
+          <li>referral details, if a household is created using another household's referral link or code, including a record linking the two households and the user ID of the person who created the new household.</li>
         </ul>
         <p>Household information is shared with the relevant members of that household.</p>
         <p>You are responsible for choosing who you invite to your household and for keeping invite codes secure.</p>
@@ -212,7 +213,7 @@
           <li>activity metadata.</li>
         </ul>
         <p>Activity records may be used to show household highlights, recent activity and service notifications.</p>
-        <p>Because activity records form part of the household's shared history, some activity records may remain after a user leaves a household or deletes their account. Where appropriate, personal identifiers may be removed, anonymised or replaced with wording such as "Former household member" or "Deleted member".</p>
+        <p>Because activity records form part of the household's shared history, some activity records may remain after a user leaves a household or deletes their account. Where appropriate, personal identifiers may be removed, anonymised or replaced with wording such as "Former member".</p>
 
         <h2>10. Push notification information</h2>
         <p>Equalize uses push notifications.</p>
@@ -249,6 +250,8 @@
         <p>Subscriptions may be offered monthly, annually or through other options shown at the point of purchase.</p>
         <p>Subscription payments are processed by the relevant app store or payment provider, such as Google Play or the Apple App Store.</p>
         <p>Equalize does not collect or store your full payment card details.</p>
+        <p>We use RevenueCat to help manage subscriptions, free trials, renewal status and access to Equalize. RevenueCat may process subscription transaction information, an app user identifier and technical information needed to provide this service. The app user identifier we use with RevenueCat is your Equalize user ID (your Firebase Authentication user ID), so that purchases made through Apple or Google can be linked to your Equalize account. We do not send your name, email address or household content to RevenueCat.</p>
+        <p>We use this information to verify subscription status and determine whether a household has access to Equalize.</p>
         <p>We may receive or store information needed to manage subscription access, such as:</p>
         <ul>
           <li>subscription status;</li>
@@ -265,24 +268,21 @@
         <p>Deleting your Equalize account may not automatically cancel your app store subscription. You should cancel subscriptions through the relevant app store or payment provider.</p>
 
         <h2>13. Analytics and app usage information</h2>
-        <p>We may use Firebase, Google Analytics for Firebase or related Google services to understand general app usage and improve Equalize.</p>
-        <p>This may include information such as:</p>
+        <p>The Equalize app includes Google Analytics for Firebase, a product analytics tool provided by Google. In the current version of the app, analytics collection is switched off, and we do not use it to collect information about how you use Equalize.</p>
+        <p>If we decide to switch on product analytics in a future version, we will update this Privacy Policy before doing so and ask for your consent where required. Analytics would then be used to understand general app usage and improve Equalize, and could include information such as:</p>
         <ul>
-          <li>app opens;</li>
-          <li>general app engagement;</li>
-          <li>device type;</li>
-          <li>operating system;</li>
-          <li>app version;</li>
+          <li>app opens and general app engagement;</li>
+          <li>general feature usage and session information;</li>
+          <li>device type, operating system and app version;</li>
           <li>approximate country or region;</li>
-          <li>technical identifiers;</li>
-          <li>session information;</li>
-          <li>general feature usage;</li>
-          <li>automatically collected app events or diagnostics made available through Firebase or Google services.</li>
+          <li>app instance or other technical identifiers.</li>
         </ul>
+        <p>Crash reporting is separate from product analytics and is described in section 14.</p>
         <p>We do not use analytics to sell personal information.</p>
         <p>We do not use analytics to sell household-level data.</p>
         <p>We do not use analytics for third-party advertising or data broker activity.</p>
         <p>We do not currently use ad SDKs, tracking pixels, attribution SDKs or third-party advertising networks.</p>
+        <p>We do not track you across apps or websites owned by other companies for advertising purposes.</p>
 
         <h2>14. Crash and diagnostic information</h2>
         <p>We use crash reporting and diagnostic tools to identify bugs and improve reliability.</p>
@@ -302,6 +302,7 @@
         <p>We use Firebase Crashlytics for crash reporting.</p>
         <p>Crash reports help us fix bugs, improve performance and make Equalize more reliable.</p>
         <p>We do not intentionally add custom user identifiers to Crashlytics reports.</p>
+        <p>Crash and diagnostic information is used for crash reporting, diagnostics and reliability. It is not used for advertising.</p>
 
         <h2>15. Device identifiers and technical information</h2>
         <p>Equalize and the services it uses may process technical identifiers such as:</p>
@@ -312,13 +313,21 @@
           <li>app instance or installation identifiers;</li>
           <li>device and operating system information.</li>
         </ul>
-        <p>These identifiers are used for purposes such as authentication, database access, crash reporting, push notifications, fraud prevention, security, diagnostics and service reliability.</p>
+        <p>These identifiers are used for the following purposes:</p>
+        <ul>
+          <li><strong>Authentication and operating Equalize:</strong> your Firebase Auth user ID is used to sign you in, control access to household data and operate app features;</li>
+          <li><strong>Subscription management:</strong> your Firebase Auth user ID is also used as your app user identifier with RevenueCat, so that store purchases can be linked to your account and your household's access can be verified (see section 12);</li>
+          <li><strong>Crash reporting and diagnostics:</strong> Firebase Crashlytics uses installation identifiers and device information to group and investigate crashes (see section 14);</li>
+          <li><strong>Push notification delivery:</strong> your Firebase Cloud Messaging token is used to deliver notifications to your device (see section 10);</li>
+          <li><strong>Security and reliability:</strong> identifiers may be used to protect accounts, prevent fraud and misuse, and keep Equalize working reliably.</li>
+        </ul>
+        <p>Product analytics identifiers are not used for analytics while analytics collection is switched off (see section 13).</p>
 
         <h2>16. Data stored or cached on your device</h2>
         <p>Equalize may store or cache some data on your device so that the app can load faster, work reliably and support normal Firebase functionality.</p>
         <p>This may include recently used household data, app state or Firestore local cache data.</p>
         <p>Device-level protections depend on your operating system, device settings and whether your device is locked, encrypted, rooted, jailbroken or otherwise compromised.</p>
-        <p>You can remove locally cached Equalize data by signing out, uninstalling the app, or using your device's app storage controls.</p>
+        <p>Signing out ends your session on that device, but it may not remove all locally cached Equalize data. To remove cached data from a device, uninstall the app or clear its data using your device's app storage controls.</p>
 
         <h2>17. Support information</h2>
         <p>If you contact us for support, we may collect:</p>
@@ -336,6 +345,7 @@
         <p>Our website is mainly used to provide information about Equalize and to host legal and support pages.</p>
         <p>We do not currently use an email marketing tool.</p>
         <p>We do not currently intend to use website cookies for advertising.</p>
+        <p>Our website is hosted by Vercel. When you visit it, Vercel processes technical information such as your IP address, browser type and the pages requested, in order to deliver and protect the website. Our website also loads fonts from Google Fonts, which means your browser connects to Google's servers and shares your IP address with Google.</p>
         <p>If we later add website analytics, cookies, email sign-ups or marketing tools, we will update this Privacy Policy and provide any cookie notice or consent mechanism required by law.</p>
 
         <h2>19. Information other household members can see</h2>
@@ -438,6 +448,7 @@
         <h3>22.3 Consent</h3>
         <p>We may rely on consent where required.</p>
         <p>For example, your device may ask permission before enabling push notifications.</p>
+        <p>If we switch on product analytics in a future version of the app, we will ask for your consent where required.</p>
         <p>If we introduce marketing emails in the future, we will use consent where required.</p>
 
         <h3>22.4 Legal obligation</h3>
@@ -455,23 +466,24 @@
           <li>Cloud Firestore;</li>
           <li>Firebase Crashlytics;</li>
           <li>Firebase Cloud Messaging;</li>
-          <li>Google Analytics for Firebase or related Google services;</li>
-          <li>Google Cloud infrastructure.</li>
+          <li>Google Analytics for Firebase (included in the app but switched off in the current version — see section 13);</li>
+          <li>Cloud Functions for Firebase and other Google Cloud infrastructure.</li>
         </ul>
-        <p>These services help us provide authentication, data storage, crash reporting, push notifications, analytics, diagnostics and infrastructure.</p>
+        <p>These services help us provide authentication, data storage, crash reporting, push notifications, diagnostics and infrastructure.</p>
 
         <h2>25. Google Sign-In and Apple Sign-In</h2>
         <p>If you choose to sign in using Google or Apple, those providers may process information as part of their own authentication services.</p>
         <p>We use the information returned by Google or Apple to create or access your Equalize account.</p>
         <p>OAuth tokens or identity tokens used during sign-in are used for authentication and are not stored by Equalize as long-term household records.</p>
 
-        <h2>26. App stores and payment providers</h2>
+        <h2>26. App stores, payment providers and subscription management</h2>
         <p>Subscriptions are processed through app stores or payment providers, such as:</p>
         <ul>
           <li>Google Play;</li>
           <li>Apple App Store.</li>
         </ul>
         <p>These providers process payments and manage subscription billing according to their own terms and privacy policies.</p>
+        <p>We use RevenueCat as a service provider to manage subscription entitlements and verify whether a household has access to Equalize, as described in section 12.</p>
         <p>Equalize does not store your full payment card details.</p>
 
         <h2>27. Support and email providers</h2>
@@ -491,7 +503,7 @@
 
         <h2>29. International data transfers</h2>
         <p>Equalize is operated from the United Kingdom.</p>
-        <p>Some of our service providers may process or store information in countries outside the UK or outside your country of residence.</p>
+        <p>Our main service providers are Google (Firebase and Google Cloud), RevenueCat, Apple, Google Play and our website host, Vercel. Some of these providers are based in, or may process or store information in, the United States and other countries outside the UK or outside your country of residence.</p>
         <p>Where required, we rely on appropriate safeguards for international transfers, such as contractual protections used by our service providers.</p>
 
         <h2>30. How long we keep information</h2>
@@ -503,7 +515,7 @@
           <li>subscription information is kept while needed to manage access and comply with legal or payment requirements;</li>
           <li>support messages are kept while needed to respond to and manage support issues;</li>
           <li>crash and diagnostic information is kept for product improvement, diagnostic and security purposes;</li>
-          <li>analytics information is kept for product improvement and service reliability purposes;</li>
+          <li>if product analytics is switched on in future, analytics information will be kept for product improvement and service reliability purposes;</li>
           <li>legal, tax, fraud prevention or accounting records may be kept where required or appropriate.</li>
         </ul>
 
@@ -522,10 +534,12 @@
           <li>your active chore assignments;</li>
           <li>active references in default split settings or joint contribution settings.</li>
         </ul>
+        <p>When you delete your account in the app, your authentication account and user profile are deleted straight away. The 60-day period below applies to any information that may remain after that.</p>
         <p>Our standard deletion and retention review period is 60 days.</p>
         <p>During this period, we may retain limited information where needed to complete deletion or anonymisation processes, handle support issues, deal with billing or subscription issues, protect against fraud or misuse, comply with legal obligations, or resolve disputes.</p>
-        <p>After this period, we will delete, anonymise or minimise personal information associated with your deleted account unless we need to retain certain information for legal, security, fraud prevention, billing, accounting or dispute-resolution reasons.</p>
+        <p>After this period, we will delete, anonymise or minimise any remaining personal information associated with your deleted account that is within our control, except where it forms part of the shared household history described in section 33, is held in backups or by subscription providers as described in section 34, or needs to be retained for legal, security, fraud prevention, billing, accounting or dispute-resolution reasons.</p>
         <p>Deleting your Equalize account may not automatically cancel your app store subscription. You should cancel subscriptions through the relevant app store or payment provider.</p>
+        <p>You can find step-by-step deletion instructions in our <a href="account-deletion.html">Account &amp; Data Deletion Policy</a>.</p>
 
         <h2>32. Leaving a household</h2>
         <p>Leaving a household is different from deleting your account.</p>
@@ -554,12 +568,13 @@
           <li>activity feed entries.</li>
         </ul>
         <p>These records may remain so that other household members can understand historical expenses, balances, chores, reports and household activity.</p>
-        <p>Where appropriate, we will remove, minimise or anonymise personal identifiers, such as replacing your name with wording like "Former household member" or "Deleted member".</p>
+        <p>When your account is deleted, your profile is removed, and Equalize generally shows wording such as "Former member" where your name would otherwise appear. However, some historical records, such as activity feed entries, may still show the display name that was recorded at the time of the activity.</p>
         <p>Some historical records may retain limited technical references where needed to preserve household calculations, audit trails, shared records, security, fraud prevention, billing, support or legal records.</p>
 
         <h2>34. Backups and residual records</h2>
         <p>Some information may remain temporarily in backups, logs, crash reports, analytics systems or cached systems after account deletion.</p>
         <p>This data will be deleted, overwritten or made inaccessible through normal retention and backup cycles.</p>
+        <p>Subscription and purchase records held by RevenueCat, Apple and Google are not automatically deleted when you delete your Equalize account. They may be retained in line with those providers' own retention practices and our legal, tax, accounting and dispute-resolution obligations.</p>
         <p>We may retain limited records where required or appropriate for legal, tax, accounting, billing, security, fraud prevention or dispute-resolution purposes.</p>
 
         <h2>35. Children and teenagers</h2>
