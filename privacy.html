@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="/analytics.js"></script>
 </head>
 <body>
 
@@ -57,7 +58,7 @@
 
       <div class="legal-header">
         <h1>Privacy Policy</h1>
-        <p>Last updated: 5 November 2026</p>
+        <p>Last updated: 24 November 2026</p>
       </div>
 
       <div class="legal-content">
@@ -344,9 +345,38 @@
         <h2>18. Website information</h2>
         <p>Our website is mainly used to provide information about Equalize and to host legal and support pages.</p>
         <p>We do not currently use an email marketing tool.</p>
-        <p>We do not currently intend to use website cookies for advertising.</p>
+        <p>Our website does not use cookies, advertising pixels or advertising trackers.</p>
         <p>Our website is hosted by Vercel. When you visit it, Vercel processes technical information such as your IP address, browser type and the pages requested, in order to deliver and protect the website. Our website also loads fonts from Google Fonts, which means your browser connects to Google's servers and shares your IP address with Google.</p>
-        <p>If we later add website analytics, cookies, email sign-ups or marketing tools, we will update this Privacy Policy and provide any cookie notice or consent mechanism required by law.</p>
+
+        <h3 id="website-analytics" style="scroll-margin-top: calc(var(--nav-height) + 16px);">18.1 Website analytics</h3>
+        <p>We use Vercel Web Analytics, provided by our website host Vercel, to understand how many people visit our website, which pages they view, and which of our marketing posts and campaigns bring visitors to the website. It does not use cookies.</p>
+        <p>When you visit a page that uses website analytics, the following information is processed:</p>
+        <ul>
+          <li>the page you viewed (the web address, with any query string or fragment removed before it is sent) and the time of your visit;</li>
+          <li>the website that referred you, if any;</li>
+          <li>approximate location (country, region and city), worked out from your IP address;</li>
+          <li>device type, operating system and version, and browser and version.</li>
+        </ul>
+        <p>Some links we share on social media point to campaign pages, such as <code>equalizeapp.com/v/ig-v08</code>. The short code in that address identifies the post or campaign, not you. If you tap an App Store or Google Play button on one of these pages, we record an event containing only that campaign code and which store you chose.</p>
+        <p>To count unique visitors without cookies, Vercel creates a hash from information in your browser's request. Vercel states that this visitor session information is not stored permanently and is discarded after 24 hours. We see aggregated reports only. We do not receive your IP address, and we do not use website analytics to identify you or to track you across other websites or apps.</p>
+        <p>Website analytics does not collect your email address, household information, payment information or account details. It is not used on household invite or challenge pages, because those addresses contain invite codes.</p>
+        <p>When you follow a campaign link to the App Store or Google Play, the store link includes the campaign code so that Apple and Google can give us aggregated reports on how many people viewed, pre-ordered, pre-registered for or installed Equalize from each campaign. Apple and Google handle this under their own privacy policies.</p>
+        <p>We do not use website analytics for advertising, and we do not sell this information.</p>
+        <p><strong>Retention.</strong> Vercel keeps aggregated website analytics reports available to us for 12 months on our current plan. Vercel may keep this data for longer under its own terms and policies.</p>
+        <p><strong>Your choices.</strong> You can stop website analytics in any of these ways, and the website will continue to work normally:</p>
+        <ul>
+          <li>turn on Global Privacy Control or “Do Not Track” in your browser, and our website will not load analytics;</li>
+          <li>use the button below to turn off website analytics in this browser;</li>
+          <li>use a browser or extension that blocks analytics scripts;</li>
+          <li>contact us at <a href="mailto:hello@equalizeapp.com">hello@equalizeapp.com</a> to object to this processing.</li>
+        </ul>
+        <div id="analytics-choice" hidden>
+          <p id="analytics-choice-status" role="status" aria-live="polite"></p>
+          <button type="button" id="analytics-choice-button" class="btn btn-outline"></button>
+        </div>
+        <noscript><p>Website analytics only runs when JavaScript is enabled, so it is not active for you now.</p></noscript>
+        <p>If you use the button, we save a small setting in your browser's local storage to remember your choice. This setting stays on your device and is not sent to us.</p>
+        <p>If we later add cookies, email sign-ups or other marketing tools to our website, we will update this Privacy Policy and provide any notice or consent mechanism required by law.</p>
 
         <h2>19. Information other household members can see</h2>
         <p>Equalize is built around shared household data.</p>
@@ -438,6 +468,7 @@
           <li>improve Equalize;</li>
           <li>fix bugs;</li>
           <li>understand app usage;</li>
+          <li>understand how people find our website and which marketing campaigns bring visitors, using cookieless website analytics (see section 18.1);</li>
           <li>prevent misuse;</li>
           <li>protect security;</li>
           <li>send important service communications;</li>
@@ -503,7 +534,7 @@
 
         <h2>29. International data transfers</h2>
         <p>Equalize is operated from the United Kingdom.</p>
-        <p>Our main service providers are Google (Firebase and Google Cloud), RevenueCat, Apple, Google Play and our website host, Vercel. Some of these providers are based in, or may process or store information in, the United States and other countries outside the UK or outside your country of residence.</p>
+        <p>Our main service providers are Google (Firebase and Google Cloud), RevenueCat, Apple, Google Play and our website host and website analytics provider, Vercel. Some of these providers are based in, or may process or store information in, the United States and other countries outside the UK or outside your country of residence.</p>
         <p>Where required, we rely on appropriate safeguards for international transfers, such as contractual protections used by our service providers.</p>
 
         <h2>30. How long we keep information</h2>
@@ -516,6 +547,7 @@
           <li>support messages are kept while needed to respond to and manage support issues;</li>
           <li>crash and diagnostic information is kept for product improvement, diagnostic and security purposes;</li>
           <li>if product analytics is switched on in future, analytics information will be kept for product improvement and service reliability purposes;</li>
+          <li>website analytics reports are available to us for 12 months on our current Vercel plan, and Vercel discards visitor session information after 24 hours (see section 18.1);</li>
           <li>legal, tax, fraud prevention or accounting records may be kept where required or appropriate.</li>
         </ul>
 
@@ -712,6 +744,46 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var analytics = window.EqualizeAnalytics;
+      var box = document.getElementById('analytics-choice');
+      var status = document.getElementById('analytics-choice-status');
+      var button = document.getElementById('analytics-choice-button');
+      if (!analytics || !box || !status || !button) return;
+
+      function render() {
+        if (analytics.browserSignalsOptOut()) {
+          status.textContent = 'Your browser is sending a Global Privacy Control or Do Not Track signal, so website analytics is off.';
+          button.hidden = true;
+        } else if (analytics.hasOptedOut()) {
+          status.textContent = 'Website analytics is turned off in this browser.';
+          button.textContent = 'Turn website analytics back on';
+          button.hidden = false;
+        } else {
+          status.textContent = 'Website analytics is currently on in this browser.';
+          button.textContent = 'Turn off website analytics';
+          button.hidden = false;
+        }
+      }
+
+      button.addEventListener('click', function () {
+        var turningOff = !analytics.hasOptedOut();
+        if (!analytics.setOptOut(turningOff)) {
+          status.textContent = 'Your browser did not allow us to save this setting. You can use Global Privacy Control or a content blocker instead.';
+          return;
+        }
+        render();
+        if (turningOff) {
+          // Reload so the analytics script already on this page stops.
+          window.location.reload();
+        }
+      });
+
+      box.hidden = false;
+      render();
+    })();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

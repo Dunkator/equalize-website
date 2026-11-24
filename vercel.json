@@ -7,6 +7,10 @@
     {
       "source": "/join/:code",
       "destination": "/join/index.html"
+    },
+    {
+      "source": "/v/:campaign",
+      "destination": "/v/index.html"
     }
   ],
   "headers": [

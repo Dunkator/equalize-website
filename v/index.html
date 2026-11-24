@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Equalize helps shared households split spending fairly, manage chores, track shopping and understand their finances — all in one place.">
+  <meta name="theme-color" content="#52B788">
+  <title>Equalize — Your household, in balance</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="canonical" href="https://www.equalizeapp.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Equalize — Your household, in balance">
+  <meta property="og:description" content="Split spending fairly, share chores and keep your household in balance.">
+  <meta property="og:site_name" content="Equalize">
+  <meta property="og:locale" content="en_GB">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .campaign-page {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(135deg, var(--green) 0%, var(--green-deeper) 100%);
+    }
+    .campaign-top {
+      padding: 20px 0;
+    }
+    .campaign-top .logo-text { color: white; }
+    .campaign-top .nav-logo:focus-visible { outline: 3px solid white; outline-offset: 4px; border-radius: 8px; }
+    .campaign-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 8px 0 48px;
+    }
+    .campaign-main .final-cta-inner h1 {
+      color: white;
+      font-size: clamp(1.9rem, 6vw, 2.8rem);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .campaign-main .store-badges { margin-top: 8px; }
+    .campaign-main .store-badge:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 3px;
+    }
+    .campaign-status {
+      margin-top: 16px;
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.75);
+    }
+    .campaign-more {
+      display: inline-block;
+      margin-top: 28px;
+      color: white;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .campaign-footer {
+      padding: 20px 0 28px;
+      text-align: center;
+      font-size: 0.8125rem;
+      color: rgba(255,255,255,0.7);
+    }
+    .campaign-footer p { color: rgba(255,255,255,0.75); font-size: 0.8125rem; }
+    .campaign-footer a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .campaign-footer nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin-bottom: 8px;
+    }
+    @media (max-width: 480px) {
+      .campaign-main .cta-phone { margin: 24px 0; }
+      .campaign-main .cta-frame { width: 150px; }
+      .campaign-main .store-badge { width: 100%; max-width: 280px; justify-content: center; }
+    }
+  </style>
+  <!-- campaign.js must load before analytics.js (analytics uses its validator). -->
+  <script src="/v/campaign.js"></script>
+  <script src="/analytics.js"></script>
+</head>
+<body>
+  <div class="campaign-page">
+
+    <header class="campaign-top">
+      <div class="container">
+        <a href="/" class="nav-logo">
+          <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <rect width="28" height="28" rx="7" fill="white"/>
+            <rect x="7" y="10" width="14" height="2.5" rx="1.25" fill="#52B788"/>
+            <rect x="7" y="15.5" width="14" height="2.5" rx="1.25" fill="#52B788"/>
+          </svg>
+          <span class="logo-text">Equalize</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="campaign-main">
+      <div class="container">
+        <div class="final-cta-inner">
+          <h1>Your household, in balance.</h1>
+          <p>Split spending fairly, share chores and shopping, and see where your household's money goes — all in one app. One subscription covers everyone.</p>
+
+          <div class="cta-phone">
+            <div class="cta-frame">
+              <div class="cta-notch"></div>
+              <img src="/images/dashboard.jpeg" alt="Equalize household dashboard screen" class="cta-img" width="164" height="355">
+              <div class="cta-home"></div>
+            </div>
+          </div>
+
+          <div class="store-badges" role="group" aria-label="App stores">
+            <div data-store="apple">
+              <span class="store-badge store-badge--soon" aria-label="App Store — coming soon">
+                <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" fill="currentColor"/></svg>
+                <span class="store-badge-text">
+                  <span class="store-sub">Coming soon on the</span>
+                  <span class="store-main">App Store</span>
+                </span>
+              </span>
+            </div>
+            <div data-store="google">
+              <span class="store-badge store-badge--soon" aria-label="Google Play — coming soon">
+                <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.18 23.76c.35.19.75.24 1.15.14L14.54 12 10.9 8.36 3.18 23.76zM20.7 10.37l-2.7-1.54-3.9 3.9 3.9 3.9 2.72-1.56c.77-.44.77-1.26 0-1.7zM1.55.38C1.22.7 1 1.22 1 1.9v20.2c0 .68.22 1.2.55 1.52l.08.07L12.17 12v-.27L1.63.3zM14.54 12L4.33.1c-.4-.12-.8-.07-1.15.14L14.54 12z" fill="currentColor"/></svg>
+                <span class="store-badge-text">
+                  <span class="store-sub">Coming soon on</span>
+                  <span class="store-main">Google Play</span>
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <p class="campaign-status" id="store-status-note">Equalize is launching soon on iPhone and Android.</p>
+
+          <a href="/" class="campaign-more">See how Equalize works</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="campaign-footer">
+      <div class="container">
+        <nav aria-label="Legal">
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms &amp; Conditions</a>
+          <a href="mailto:hello@equalizeapp.com">Contact</a>
+        </nav>
+        <p>This page uses cookieless website analytics. <a href="/privacy.html#website-analytics">Learn more</a>.</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
